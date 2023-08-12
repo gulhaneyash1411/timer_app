@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import Login from "./Login"; // Make sure the import path is correct
+import Login from "./Login";
 import Timer from "./Timer";
 
 function App() {
-  const [user, setUser] = useState(null); // Track the authenticated user
+  const [user, setUser] = useState(null); 
 
   return <div>{user ? <Timer /> : <Login setUser={setUser} />}</div>;
 }
